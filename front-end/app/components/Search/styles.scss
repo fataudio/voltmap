@@ -1,0 +1,99 @@
+@import "../../../app/assets/styles/variables";
+
+.searchbar {
+  div {
+    label {
+      color: $color-black !important;
+      font-size: 1.1rem;
+    }
+
+    div {
+      background-color: $color-white;
+
+      .MuiAutocomplete-endAdornment {
+        border: unset;
+      }
+
+      fieldset {
+        border: 1px solid $color-black !important;
+        color: $color-black !important;
+
+        legend {
+          color: $color-black !important;
+          span {
+            color: $color-black !important;
+          }
+        }
+      }
+
+      input {
+        color: $color-black;
+        font-weight: bold;
+      }
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-black;
+        color: $color-black;
+      }
+    }
+  }
+
+  &-list {
+    &-item {
+      padding: 1rem;
+      cursor: pointer;
+      border-bottom: 1px solid $color-gray-4;
+      min-height: 3rem;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $color-gray-4;
+      }
+    }
+
+    &-item:last-child {
+      border: none;
+    }
+  }
+}
+
+.MuiAutocomplete-popper {
+  div {
+    ul {
+      padding: 0;
+    }
+  }
+}
+
+b {
+  font-weight: 700;
+}
+
+@media (max-width: $mobile-device) {
+  .searchbar {
+    div {
+      label {
+        font-size: 1.4rem;
+      }
+
+      input {
+        font-size: 1.4rem;
+      }
+
+      div {
+        svg {
+          width: 2.6rem;
+          height: 2.6rem;
+        }
+      }
+    }
+
+    &-list {
+      &-item {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

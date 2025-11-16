@@ -1,0 +1,13 @@
+@import "../../../app/assets/styles/variables";
+
+.leaflet-popup-close-button {
+  span {
+    font-size: 2rem;
+    padding: 0.2rem;
+  }
+}
+
+.popup {
+  bottom: 10px !important;
+  margin-left: 10px;
+}
